@@ -1,0 +1,28 @@
+
+ .local{
+     animation: colorchange;
+     animation-duration: 6s;
+     animation-iteration-count: infinite;
+ }
+ 
+@keyframes colorchange {
+    0%{
+        color: rgb(136, 255, 0);
+    }
+    25%{
+        color: rgb(255, 0, 106);
+    }
+    50%{
+        color: rgba(255, 22, 255, 0.884);
+    }
+    75%{
+        color: rgb(213, 235, 13);
+    }
+    100%{
+        color: rgb(52, 214, 255);
+    }
+ }   
+ 
+
+   
+    

@@ -1,0 +1,151 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+         /*header*/
+header{
+    display: flex;
+    justify-content: flex-end;
+    background-color: transparent;
+    align-items: center;
+}
+.logo{
+    margin-right: auto;
+    width: 90px;
+    padding: 10px;
+    margin-left: 50px;
+    
+}
+       /*nav bar*/
+nav ul li{
+    display: inline-block;
+    padding: 40px 20px; 
+}
+nav ul li a{
+    text-decoration: none;
+    color: white;
+}
+nav ul li a:hover{
+    color: rgb(77, 43, 6);
+    cursor: pointer;
+    transition: all 0.3s ease 0s;
+    /*nav bar end*/
+}
+header>button{
+    margin-right: 20px;
+    padding: 5px;
+    border-radius: 10px;
+    background-color: grey;
+    outline: none;
+    border: none;
+    color: white;
+}
+header>button:hover{
+    background-color: rgb(213, 90, 230);
+    color: white;
+    transition: all 0.3s ease 0s;
+    cursor: pointer;
+          
+}
+          /*header end*/
+
+          /*wrapper*/
+.wrapper{
+    background: url(./assets/1.jpg) no-repeat center center / cover;
+    width: 100%;
+    display: block;
+    position: fixed;
+    z-index: 1;
+}
+.wrapper::before{
+    position:absolute;
+    background-image: linear-gradient( to bottom ,rgb(39, 32, 32,0.65), rgb(41, 35, 35,0.65)); 
+    content: '';
+    width: 100%;
+    height: 100%;
+    top: 0;
+    left: 0;
+    z-index:-1;
+
+}
+       /*wrapper end*/
+
+       /*content*/
+.content{
+    color: white;
+    display: flex;
+    padding: 60px 700px 60px 50px;
+    
+}
+.btn{
+    margin-top: 80px;
+    padding:5px 15px ;
+    margin-right: 15px;
+    background-color: transparent;
+    border-radius: 10px;
+    color: whitesmoke;
+}
+.btn:hover{
+    background-color: rgb(243, 88, 26);
+    color: white;
+    cursor: pointer;
+    border: none;
+    transition: all 0.3s ease 0s;
+}
+p{
+    margin-top: 30px;
+    font-size: 20px;
+}
+
+h1{
+    font-size: 50px;
+    color: rgb(250, 194, 194);
+}
+        /*content end */
+
+        /*footer*/
+footer{
+    margin-left: 600px;
+    margin-bottom: 30px;
+
+}
+
+
+footer>button{
+     margin: 30px 20px 0 20px;
+     align-items: center;
+     margin-right: 20px;
+     padding: 7px 17px;
+     border-radius: 10px;
+     color: white;
+     border: none;
+}
+.w-btn{
+    background-color: rgb(63, 230, 63);
+}
+.f-btn{
+    background-color: rgb(66, 66, 255);
+}
+.i-btn{
+    background-color: rgb(255, 74, 104);
+}
+footer>button:hover{
+    cursor: pointer;
+    
+}
+    /*footer end*/
+
+@media screen and (max-width:1200px) {
+    .content{
+        width: 100%;
+        text-align: center;
+    }
+    
+}
+    
+
+
+  
+
+ 
